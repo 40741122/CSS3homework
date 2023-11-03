@@ -89,7 +89,7 @@ header{
 
     .header_bottom_border{
         height: 10px;
-        background-image: url("/images/header_l.jpg");
+        background-image: url("../images/header_l.jpg");
     }
 
     @media screen and (max-width:768px) {
@@ -121,7 +121,7 @@ header{
 }
 
 main{
-    background-image: url("/images/bg.jpg");
+    background-image: url("../images/bg.jpg");
 
     .container{
         padding: 50px;
@@ -133,7 +133,7 @@ main{
         }
 
         & p{
-                background-image: url("/images/hat.png");
+                background-image: url("../images/hat.png");
                 background-repeat: no-repeat;
                 text-align: center;
                 background-position: 120px 10px;
