@@ -56,10 +56,6 @@ header{
         right: 10px;
     }
 
-    & img{
-        display: block;
-    }
-
     .logo_top{
         padding-top: 0.5rem;
         padding-left: 0.5rem;
@@ -93,15 +89,15 @@ header{
     }
 
     @media screen and (max-width:768px) {
-        .home_position, .fb_position{
-            display: none;
-        }
-
         .menu_position{
             display: block;
             position: absolute;
             top: 10px;
             right: 10px;
+        }
+
+        .home_position, .fb_position{
+            display: none;
         }
 
         .logo_top{
@@ -144,6 +140,34 @@ main{
         .content{
             position: relative;
             margin-bottom: 50px;
+
+            .content_ds{
+                text-align: justify;
+                background: #fff;
+                border: 3px solid lightblue;
+                border-radius: 20px;
+                padding-right: 40px;
+                line-height: 2rem;
+                & span{
+                    color: lightskyblue;
+                }
+
+                & li{
+                    font-weight: bold;
+                }
+
+                & br{
+                    display: none;
+                }
+
+                .notice{
+                    color: rgb(79, 173, 204);
+                    padding-left: 40px;
+                    margin-bottom: 2rem;
+                    font-weight: bold;
+                }
+            }
+
             & img{
             margin: auto;
             }
@@ -161,34 +185,6 @@ main{
                 position: absolute;
                 top: -35px;
                 left: -35px;
-            }
-
-            .content_ds{
-                text-align: justify;
-                background: #fff;
-                border: 3px solid lightblue;
-                border-radius: 20px;
-                padding-right: 40px;
-                line-height: 2rem;
-                & span{
-                    color: lightskyblue;
-                }
-
-                & li{
-                    font-weight: bold;
-                    /* line-height: 2rem; */
-                }
-
-                & br{
-                    display: none;
-                }
-
-                .notice{
-                    color: rgb(79, 173, 204);
-                    padding-left: 40px;
-                    margin-bottom: 2rem;
-                    font-weight: bold;
-                }
             }
 
             .girl1{
@@ -215,6 +211,10 @@ main{
 
     @media screen and (max-width:768px) {
         .container{
+            .p_title{
+                display: none;
+            }
+
             .p_title_m{
                 display: block;
                 margin: auto;
@@ -253,18 +253,14 @@ main{
                     display: none;
                 }
 
+                .flow_chart_p{
+                    display: none;
+                }
+
                 .flow_chart_m{
                     display: block;
                     margin: auto;
                 }
-            }
-
-            .p_title{
-                display: none;
-            }
-
-            .flow_chart_p{
-                display: none;
             }
         }
     }
@@ -273,7 +269,7 @@ main{
 footer{
     padding-block: 10px;
     background: black;
-    .flex{
+    .brand_list{
         padding-block: 10px;
         justify-content: center;
         align-items: center;
